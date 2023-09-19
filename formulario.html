@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!-- 
+        Action:
+        Atributo action é o caminho para onde vai a requisição quando eu apertar submit(enviar)
+
+        Method:
+        Diz o metodo de envio das informações pelo navegador
+        GET -> Solicida dados. (busca)  / Dados sao exibidos na URL do navegador
+        POST -> Envia dados. (enviar)   / Dados não sao exibidos na URL
+     -->
+
+    <form action="contato.php" method="get">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nome">
+
+        <input type="text" name="email" placeholder="E-mail">
+    </form>
+
+    <input type="submit" value="ENVIAR">
+
+    <!--
+        type= tipo que vai aceitar, texto, numero...
+        name= variavel pra onde ele vai mandar
+        label= Pra por a descrição do que colocar no imput, Nome: idade: ...
+        placeholder= Aparece dentro do campo a preencher
+        for= se eu clicar em cima do texto, vai para a caixa de digitação (nome do id)
+    -->
+
+   
+
+
+</body>
+</html>
