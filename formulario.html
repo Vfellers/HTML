@@ -33,8 +33,12 @@
         <!-- Input para email -->
         <input type="email" name="email" placeholder="E-mail">
 
+
         <!-- input de numero -->
         <input type="number" name="numero" placeholder="Número">
+        <!-- VALOR MINIMO E MAXIMO -->
+        <input type="number" min="10" max="25">
+
 
         <!-- Input de senha -->
         <input type="password" name="" placeholder="Senha">
@@ -76,6 +80,8 @@
 
        <!-- TEXT AREA - escrever texto longo -->
        <textarea name="texto" id="" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+       
+
 
        <br><br>
 
@@ -124,6 +130,11 @@
             disabled -> igual o read, mas desabilita o campo (nao é enviado no formulário)
         -->
         <input type="text" name="teste1" value="Valor fixo" required readonly>
+
+        <br><br>
+
+        <!-- Tamanho maximo de caracteres no input text -->
+        <input type="text" name="maximo" maxlength="8">
 
 
 
