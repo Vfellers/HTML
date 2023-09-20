@@ -17,22 +17,130 @@
         POST -> Envia dados. (enviar)   / Dados não sao exibidos na URL
      -->
 
-    <form action="contato.php" method="get">
-        <label for="nome">Nome Completo</label>
-        <input type="text" name="nomeCompleto" id="nome">
-
-        <input type="text" name="email" placeholder="E-mail">
-    </form>
-
-    <input type="submit" value="ENVIAR">
-
-    <!--
+     <!--
+        value= valor, o que esta dentro da variavel.
         type= tipo que vai aceitar, texto, numero...
-        name= variavel pra onde ele vai mandar
+        name= variavel pra onde ele vai mandar. parâmetro.
         label= Pra por a descrição do que colocar no imput, Nome: idade: ...
         placeholder= Aparece dentro do campo a preencher
         for= se eu clicar em cima do texto, vai para a caixa de digitação (nome do id)
     -->
+
+    <form action="contato.php" method="post">          <!-- autocomplete="off" se colocar isso ali dentro, teoricamente nao é pra dar a opçao quando clico-->
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nome">
+
+        <!-- Input para email -->
+        <input type="email" name="email" placeholder="E-mail">
+
+        <!-- input de numero -->
+        <input type="number" name="numero" placeholder="Número">
+
+        <!-- Input de senha -->
+        <input type="password" name="" placeholder="Senha">
+
+        <br><br>
+
+        <!-- Input File um arquivo - envio de arquivo -->
+        <input type="file" name="arquivo">
+
+        <br><br>
+
+        <!-- Input File varios arquivos -->
+        <input type="file" name="arquivos" multiple>
+
+        <br><br>
+
+        <!-- 
+            select, lista com opçoes 
+            value seria o valor puxado pelo banco de dados
+        -->
+       <select name="Estados" required>
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+       </select>
+
+       <br><br>
+       
+       <!-- Campo oculto hidden -- Informação que tem que ser enviado mas o usuario nao pode ou nao precisa ver-->
+       <input type="hidden" name="id" value="1234" >
+
+
+       <!-- Input COR -->
+       <input type="color" name="cor">
+
+       <br><br>
+
+
+       <!-- TEXT AREA - escrever texto longo -->
+       <textarea name="texto" id="" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+
+       <br><br>
+
+
+       <!-- Data List - lista de dados -->
+       <input type="text" name="listaDados" list="lista">
+       <datalist id="lista">
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
+       </datalist>
+
+       <br><br>
+
+
+       <!-- CHECKBOX  (Se nao colocar o [] ele nao vira array e só envia o ultimo) -->
+       <input type="checkbox" name="cores[]" id="vermelho" value="vermelho" checked>
+       <label for="vermelho">Vermelho</label>
+
+       <input type="checkbox" name="cores[]" id="amarelo" value="amarelo">
+       <label for="amarelo">Amarelo</label>
+
+       <input type="checkbox" name="cores[]" id="azul" value="azul">
+       <label for="azul">Amarelo</label>
+
+
+       <br><br>
+
+
+       <!-- RADIO  -- checkbox onde só pode marcar um, sexo (pra isso nomes tem que ser igual)-->
+       <input type="radio" name="sexo" value="masculino">
+       <label for="masculino">Masculino</label>
+
+       <input type="radio" name="sexo" value="feminino">
+       <label for="feminino">Feminino</label>
+
+       <input type="radio" name="sexo" value="outros">
+       <label for="outros">Outros</label>
+
+       <br><br>
+
+       <!-- 
+            value="valor" -> preenche um valor padrao
+            required -> marca como campo obrigatório
+            readonly -> apenas leitura, tem o campo, mas nao da pra alterar, só pra ler (é enviado no formulário)
+            disabled -> igual o read, mas desabilita o campo (nao é enviado no formulário)
+        -->
+        <input type="text" name="teste1" value="Valor fixo" required readonly>
+
+
+
+        <br><br>
+        <!-- campo enviar-->
+        <input type="submit" value="ENVIAR">
+
+        <br>
+
+        <!-- Botao envio -->
+        <button type="submit">Envio com Button</button>
+
+
+
+        
+
+    </form>
 
    
 
