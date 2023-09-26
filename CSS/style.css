@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(89, 0, 255);
+}
+
+h1{
+    color: white;
+}
+
+.bloco{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 4, 0);
+    /* margin: 10px 10px 5px 5px; */
+    /*      TOP    R    B   L */
+    margin: 10px; /* todos os lados
+    /* margin: 20px   30px; */
+    /*     T e B   L e R    */
+    padding: 15px;
+    border: 4px groove greenyellow;
+    opacity: 0.8;   /* Fica tudo mais escuro, opacidade. afeta os elementos dentro do container */
+}
+
+/*Pai   Filho */
+.bloco button{
+    padding: 6px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+.bloco button:hover{
+    opacity: 0.5;
+}
+
+.classe p{
+    text-align: center;   /* center, right, left, justify, end, start */
+    color: white;
+    font-size: 20px;
+    font-family:"roboto", cursive;  /* quando a fonte é trazida do google pelo import, poe o nome entre aspas. // Segundo éa familia, se nao possuir essa fonte no pc da pessoa, ele usa qualquer uma da familia dela */
+    font-weight: 300;               /* Espessura da fonte. só posso usar os valores queeu importei dessa fonte*/
+    font-style: italic;             /* Importei italico tambem do google fonts*/
+    text-decoration:underline;      /* Underline, riscado...*/
+    text-transform: capitalize;     /* Primeira letra maiuscula, tudo maiusculo, tudo minusculo */
+}
+
+body{
+    
+   
+    background:url('cerveja.jpg');        /* padrao é repetir*/
+    background-repeat:no-repeat;          /* no-repeat / repeat-x (no eixo x, horizontal) / repeat-y (vertical)*/
+    background-size: auto;                /* Cobre o fundo todo / tamanho em % */
+    background-position: top;             /* top, right, bottom, center */
+    background-blend-mode:hard-light;         /* Filtros na imagem mescla com o background (Cor tem que estar abaixo)*/
+    background-color: rgba(0, 37, 245, 0.621);
+}
+
+/* BACKGROUND
+
+    tipos de cores:
+    hexadecimal -> #000000       //  00-> Red  00 -> Green  00-> Blue  (RGB)
+    Nome das cores -> cores em inglês.
+    RGB -> rgb(77, 144, 153)
+    RGBA: rgba(R, G, B, A) -> A é a transparência
+
+    background:url('../ovelha.png')    
+    imagemde fundo deve ter no máximo 300kb (compress em algum site)
+    
+
+*/
+
+
+/* MARGIN - expande externamente
+
+    margin: 10px 10px 5px 5px;
+    -----    TOP    R    B   L
+
+    margin: 10px;  todos os lados
+
+    margin:  20px   30px;
+    -----   T e B   L e R   
+*/
+
+/* PADDING - expande internamente
+
+    padding: 15px;
+*/
+
+/* BORDER: expessura -> tipo -> cor
+
+    border: 4px solid greenyellow;
+
+    tipos:
+    none → não setada
+    hidden → oculta, igual none
+    dotted → pontilhada
+    dashed → tracejada
+    solid → normal, contínua
+    double → borda dupla
+    groove → borda entalhada
+    ridge → borda com ressalto (efeito de 3d)
+ */
+
+ /* FORMATAÇÃO DE TEXTO
+ 
+  text-align: center;   //  center, right, left, justify, end, start 
+  color: white;
+  font-size: 20px;
+  font-family:roboto, monospace;
+ 
+ */
+
+
+
+
+div.bloco{
+    color: aqua;
+}
+
+/* SELETORES:
+
+SELETOR DE TAG -> div, span, p, qualquer tag..
+
+SELETOR DE CLASSE -> .nomeClasse
+
+SELETOR DE ID -> #nomeId
+
+SELETOR DE EVENTOS -> um dos seletores acima :hover (div:hover)
+
+SELETORES DE ATRIBUTOS -> div[rel=1] // rel="100" //  .classe[rel]
+
+DOCUMENTO TODO ->
+*{
+    margin: 0;
+    padding: 0;  (preenchimento)
+}
+*/
+
+/* UNIDADES DE MEDIDAS NO CSS
+
+PIXEL -> PX
+PORCENTAGEM -> %
+PROPORCIONAL DE CONTAINER -> EM
+PROPORCIONAL DE TELA -> REM
+REFERENCIAL DE VIEWPORT -> VW OU VH
+VW = VIEWPORT WIDTH
+VH = VIEWPORT HEIGHT
+
+*/
