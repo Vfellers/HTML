@@ -106,15 +106,44 @@ main{
     text-decoration: none;      /*Tira o sublinhado do link*/
 }
 
-/* FOOTER */
+
+/* FOOTER -------------------------------------------------*/
 
 footer{
     width: 100%;    
     height: 220px;
-    background-color: rgba(163, 158, 158, 0.91);
+    background-color: rgba(217, 217, 217, 0.995);
 
     position:absolute;
     bottom: 0;              /*Colar embaixo*/
-  
+}
 
+footer .esquerda,
+footer .centro,
+footer .direita{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 18px;
+}
+
+footer .direita{
+    padding: 40px;
+}
+
+footer .direita ul li{
+    list-style: none;
+}
+
+footer .assinatura{
+    padding: 25px 0px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
