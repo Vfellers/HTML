@@ -1,0 +1,102 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+h4{
+    font-weight: 20;
+    padding:5px 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: 650px;
+    padding: 20px 0;
+}
+
+/*titulo*/
+#login div.senha h4{
+    display: inline-block;
+    padding-top: 20px;
+}
+
+/* Login */
+#login{
+    padding-top: 150px;
+    background-color:#F2F2F2;
+    height: 100vh;
+    width: 40%;
+}
+
+#login div.email, /* botar no meio*/
+#login div.senha{
+    margin-left: 30%;
+} 
+
+#login input{
+    display: block;
+    padding: 8px 16px;
+    border:1px solid #bcc1c9;
+    border-radius: 3px;
+}
+
+#login div.senha a{
+    display: inline;
+    font-size: 12px;
+    margin-left: 35px;
+    text-decoration: none;
+    color: #0f8be3;
+}
+
+#login div.btn #entrar{
+    margin-left: 30%;
+    margin-top: 10px;
+    width: 204px;
+    height: 30px;
+    background-color: #0349eb;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition:0.2s ease-out;
+}
+
+#login div.btn #entrar:hover{
+    transition: 0.2s ease-in ;
+    background-color: #2363f9;
+    
+}
+
+hr{
+    margin: 15px 0 15px 30%;
+    width: 37%;
+}
+
+#login div.criarConta a{
+    color: #6C757D;
+    text-decoration: none; 
+    display: inline-block;
+    margin-left: 30%;
+    background-color: white;
+    padding: 5px 40px;
+    border-radius: 3px;
+    border-width: 1px;   
+    border: 1px solid #757d8a;  
+    font-size: 14px;
+    transition: 0.2s ease-out;
+}
+
+#login div.criarConta a:hover{
+    background-color: #F2F2F2;
+    transition: 0.2s ease-in;
+}
+
+body main{
+    background: url(images.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position:80% 40%;
+       
+}
+
