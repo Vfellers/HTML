@@ -1,0 +1,40 @@
+.container{
+    background-color: red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container .grid-item{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid yellow;
+}
+
+.item-1{
+    grid-column-start: 1;      /* 1=0 tem só tres colunas  1=0, 2= 1ª coluna, 3= 2ª coluna, 4= 3ª coluna*/
+    grid-column-end: 4;
+}
+
+.item-2{
+    grid-row-start: 2;         /* quer que o campo comece na segunda linha e vá até a quarta */
+    grid-row-end: 4;
+}
+
+.item-3{
+    justify-self: end;          /* JUSTIFY alinha na coluna //  Vai pra segunda coluna pois a primeira já esta sendo utilizado com o item-2*/
+    height: 200px;
+}
+
+.item-5{
+    justify-self: start;        /* Alinha no começo da coluna*/
+    height: 200px;
+}
+
+.item-4{
+    align-self: center;         /* ALIGN alinha a linha */
+}
+
+.item-6{
+    align-self: end;            /* Alinhou ao fim da linha */
+}

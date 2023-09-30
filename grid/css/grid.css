@@ -1,0 +1,13 @@
+.container{
+    background-color: red;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px auto;       /* Primeira coluna 50px, segunda auto, terceira 30%*/
+    grid-template-rows: 150px 100px 150px;            /* Primeira linha 150px segunda linha 100px */
+}
+
+.container .grid-item{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid yellow;
+}

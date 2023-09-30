@@ -1,0 +1,33 @@
+.container{
+    background-color: red;
+    padding: 15px;
+    display: grid;
+    gap: 10px;                  /*Espaço entre as linhas*/
+    grid-template-areas: 
+    "header header header"
+    "sidebar conteudo conteudo"
+    "rodape rodape rodape";
+}
+
+.container .grid-item{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid yellow;
+}
+
+.header{
+    grid-area: header; /* Header da linha 6*/
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: conteudo;
+    height: 50vh;
+}
+
+.rodape{
+    grid-area: rodape;
+}
