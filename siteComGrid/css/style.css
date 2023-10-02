@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
-    }
+}
 
 .container{
     
@@ -41,7 +41,6 @@
 
 .navegacao ul li{
     display: inline-block;
-
 }
 
 .navegacao ul li a{ /* tag a tem padrao inline*/
@@ -50,7 +49,7 @@
     padding: 50px 10px 55px 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(0, 13, 255);
+    color: white;
     font-weight: 700;
     transition: 0.5s ease-out;
 }
@@ -82,7 +81,7 @@
 /*header noticia*/
 .destaques article header h3{
     display: inline-block;          /*Nao vai até o fim, deixa só o tamanho da escrita*/
-    background-color: rgb(0, 110, 255);
+    background-color: rgba(0, 187, 250, 0.879);
     padding: 4px 8px;
     margin-bottom: 10px;
     color: white;
@@ -93,7 +92,6 @@
     text-align: center;
     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.4);
     box-sizing: border-box;
-    
 }
 
 .destaques article img{
@@ -159,7 +157,6 @@ footer .direita ul li{
 footer .assinatura{
     padding: 25px 15px;
     text-align: center;
-    
 }
 
 footer a{
