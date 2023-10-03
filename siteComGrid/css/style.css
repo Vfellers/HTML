@@ -43,9 +43,8 @@
     display: inline-block;
 }
 
-.navegacao ul li a{ /* tag a tem padrao inline*/
-   
-    display: block;
+.navegacao ul li a{ 
+    display: block;     /* tag a tem padrao inline*/
     padding: 50px 10px 55px 10px;
     text-decoration: none;
     text-transform: uppercase;

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif ;
+}
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+}
+
+
+
+
+/* ------------ NAVEGACAO ------------ */
+
+.navegacao{
+    width: 100%;
+    height: 102px;
+    padding: 0px 40px;
+    background-color: rgb(244, 217, 222);
+}
+
+.navegacao img{
+    float: left;
+}
+
+.navegacao ul{
+    text-align: center;
+    float: left;
+    width: 71%;
+}
+
+.navegacao ul li{
+    display: inline-block;
+}
+
+.navegacao ul li a{
+    display: block;
+    padding: 40px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+}
+
+.navegacao ul li a:hover{
+    background-color: pink;
+    transition: 0.2s ease-in;
+}
+
+/* ---------------- BODY --------------*/
+
+/*header noticia*/
+.destaques article header h3{
+    display: inline-block;          /*Nao vai até o fim, deixa só o tamanho da escrita*/
+    background-color: rgba(0, 187, 250, 0.879);
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.destaques article div.content{
+    min-height: 400px;
+    text-align: center;
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+.destaques article img{
+    width: 100%;
+}
+
+.destaques article h4{
+    padding: 4px 8px;    /*Aumentou o box do h4, texto*/
+    text-align: left; 
+}
+
+div.title{
+    height: 100px;
+}
+
+.btn{                           /*Botao ler*/
+    display: inline-block;      /*Pega só a area do botao*/
+    background-color: rgba(0, 187, 250, 0.879);
+    padding: 6px 25px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;      /*Tira o sublinhado do link*/
+}
+
+
+
+/* ------------------------ RODAPE ------------------------------- */
+
+
+.rodape{
+    height: 150px;
+    padding: 15px 0;
+    background-color: rgb(244, 217, 222);
+}
+
+.containerFooter{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.containerFooter a{
+    text-decoration: none;
+    color: black;
+}
+
+.grid-col ul li{
+    list-style: none;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.right-align{
+    text-align: right;
+}
