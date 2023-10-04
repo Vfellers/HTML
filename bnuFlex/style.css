@@ -51,9 +51,23 @@ nav ul li a:hover{
 
 main{
     display: flex;
-    background-color: red;
     flex: 1 0 auto;  /* 1 -> grow   //  0 -> srhink  //  auto -> basis (o que faz pegar a tela toda)*/
+    justify-content: center;
 }
+
+main .container{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+main .container .coluna{
+    width: 25%;
+    margin: 1%;
+    height: 200px;
+    background-color: blue;
+}
+
 
 /*------FOOTER-----------*/
 
@@ -81,4 +95,9 @@ footer .container div{
 footer .container div li{
     text-decoration: none;
     list-style: none;
+}
+
+footer .container a{
+    text-decoration: none;
+   
 }
